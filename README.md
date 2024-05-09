@@ -103,6 +103,7 @@ custom errors are hosted at src/app/common/field-error-display/field-error-displ
 
 Here is where the form is processed at. 
 Since I wanted to learn how asynchronous functions like subscribe fully work in react, I challenged myself to do it the following way:
+
 src/app/pages/movie-edit/movie-edit.component.ts
 ```ts
 handleSaveClick() {
@@ -155,7 +156,9 @@ handleSaveClick() {
   }
 ```
 Since I wanted to learn how asynchronous functions like subscribe fully work in react, I challenged myself to do it the following way:
-In order to create a movie, write a name that doesn't exist. In order to edit one, type a name that does exist into the form.
+
+> In order to create a movie, write a name that doesn't exist. In order to edit one, type a name that does exist into the form.
+
 (Some text was repeated so that it's not lost amidst the code)
 
 ## Server API:
