@@ -1,0 +1,39 @@
+body{
+    box-sizing: border-box;
+}
+*{
+    font-family: cursive;
+}
+.card {
+    position: relative;
+    margin: 30px auto;
+    width: 300px;
+    height: 500px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 250ms
+   }
+   .card .card_image {
+    width: inherit;
+    height: 80%;
+    
+   }
+   .card .card_image img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+   }
+   .card .card_title {
+    padding: 5%;
+    line-height: 2em;
+   height: 15%;
+    }
+
+    .card:hover {
+        border: 2px dashed black;
+        transform: scale(0.96, 0.95);
+    }
+    .card:active {
+        border: 2px dashed blue;
+        transform: scale(0.96, 0.95);
+    }

@@ -1,0 +1,78 @@
+
+<div class="container">
+<form [formGroup]="movieForm" class="form">
+  <!-- PENDING, WAITING FOR WRAPPER COMPONENT TO BE FINISHED -->
+  <app-input-wrapper id="name" name="name" label="Name" formControlName="name"></app-input-wrapper>
+  <app-field-error-display formControlName="name"></app-field-error-display>
+  <app-input-wrapper id="director" name="director" label="director" formControlName="director"></app-input-wrapper>
+  <app-input-wrapper id="poster" name="poster" label="poster" formControlName="poster"></app-input-wrapper>
+  <app-input-wrapper id="year" name="year" label="year" formControlName="year"></app-input-wrapper>
+
+  <!-- <div>
+    <label for="name">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      formControlName="name"
+      required
+      minlength="3"
+    /></div> -->
+
+  
+
+  <!-- </div> <div>
+    <label for="director">Director</label>
+    <input
+      type="text"
+      id="director"
+      name="director"
+      [(ngModel)]="movie.director"
+      #director="ngModel"
+      minlength="3"
+    />
+    <app-field-error-display
+      [fieldNgModel]="director"
+    ></app-field-error-display>
+  </div> -->
+
+  <!-- <div>
+    <label for="imageurl">Picture Url</label>
+    <input
+      type="text"
+      id="imageurl"
+      name="imageurl"
+      [(ngModel)]="movie.poster"
+      required
+      pattern="https?://.+"
+      #poster="ngModel"
+    />
+    <app-field-error-display
+      [fieldNgModel]="poster"
+      [customFieldErrors]="[
+        {
+          id: 'pattern',
+          text: 'Image URL should be well formed, http://www.mysite.com or https://www.mysite.com'
+        }
+      ]"
+    >
+    </app-field-error-display>
+  </div> -->
+  <!-- <div>
+    <label for="year">Release Date</label>
+    <input
+      type="number"
+      id="year"
+      name="year"
+      min="1900"
+      max="2100"
+      #year="ngModel"
+      [(ngModel)]="movie.year"
+    />
+    <app-field-error-display [fieldNgModel]="year"></app-field-error-display>
+  </div> -->
+  <button (click)="handleSaveClick()">Save</button>
+
+  <!-- <button (click)="handleSaveClick(movieForm)">Save</button> -->
+</form>
+</div>

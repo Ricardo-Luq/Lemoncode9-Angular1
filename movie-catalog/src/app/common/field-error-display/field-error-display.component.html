@@ -1,0 +1,5 @@
+<div *ngIf="fieldNgModel?.invalid && (fieldNgModel?.dirty || fieldNgModel?.touched)" class="errors" >
+<div *ngFor="let error of fieldNgModel?.errors | keyvalue">
+    {{ getErrorMessage(error.key) }}
+ </div>
+</div>
